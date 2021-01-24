@@ -1,194 +1,151 @@
-body {
-  margin: 0;
-  min-width: 960px;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 32px;
-  color: #222222;
-  background-color: #f2f4f6;
-  background-image: url("img/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
+.page {
+    width: 100%;
 }
 
-.container {
-  max-width: 928px;
-  margin: 0 auto;
-  padding: 0 16px;
+.page-main {
+    display: flex;
+    width: 1200px;
+    margin: auto;
 }
 
-.page-header {
-  margin: 0 0 160px;
-  padding: 32px 0 32px;
+.page-main__titles {
+    width: 1200px;
+    margin: auto;
+    position: relative;
 }
 
-.page-header .container,
-.page-footer .container {
-  max-width: 1408px;
-  text-align: right;
+.page-main__titles::before {
+    content: "";
+    position: absolute;
+    left: 1010px;
+    top: 410px;
+    background-image: url("images/Vector_1.svg");
+    width: 80px;
+    height: 80px; 
 }
 
-.page-header a {
-  margin-left: 56px;
-  color: #288be6;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: left;
+.page-main__titles::after {
+    content: "";
+    position: absolute;
+    left: 1098px;
+    top: 614px;
+    background-image: url("images/Flower_black.svg");
+    width: 45px;
+    height: 45px; 
 }
 
-.header-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email-header.svg");
+.page-main__title {
+    font-family: "Petit Formal Script";
+    font-weight: normal;
+    font-size: 160px;
+    line-height: 200px;
+    text-align: center;
+    margin-bottom: 0;
+    position: relative;
 }
 
-.header-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone-header.svg");
+.page-main__title::before {
+    content: "";
+    position: absolute;
+    left: 334px;
+    top: -7px;
+    background-image: url("images/Vector.png");
+    width: 540px;
+    height: 430px; 
+    z-index: 10;
 }
 
-.hero-image {
-  margin-bottom: 620px;
+.page-main__title::after {
+    content: "";
+    position: absolute;
+    left: 916px;
+    top: 618px;
+    background-image: url("images/Flower.svg");
+    width: 45px;
+    height: 45px; 
 }
 
-.hero-image .container {
-  max-width: 1408px;
-  text-align: center;
+.page-main__aboutme {
+    font-family: "Cormorant Infant";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 73px;
+    background-image: url("images/Picture_woods.jpg");
+    background-repeat: no-repeat;
+    padding: 72px 339px 333px 37px;
+    margin-left: 80px;
+    position: relative;
 }
 
-.heading {
-  margin: 0 0 16px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 88px;
-  line-height: 96px;
-  font-weight: 400;
+.page-main__aboutme::after {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 206px;
+    background-image: url("images/Vector.svg");
+    width: 80px;
+    height: 80px; 
 }
 
-.hero-image p {
-  margin: 0;
-  font-size: 32px;
-  line-height: 48px;
-}
-
-.intro {
-  margin: 0 0 120px;
-}
-
-.subheading {
-  margin: 0 0 56px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 64px;
-  line-height: 80px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.user-image {
-  margin: 0 0 32px;
-  text-align: center;
-}
-
-.intro h3,
-.portfolio h3 {
-  margin: 0 0 12px;
-  font-size: 28px;
-  line-height: 40px;
-  font-weight: 500;
-}
-
-.intro p {
-  margin: 0 0 32px;
-}
-
-.skills-list {
-  margin: 0;
-  padding: 0;
-}
-
-.skills-list dt {
-  padding-left: 32px;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.skill-html {
-  background-image: url("img/icon-html.svg");
-}
-
-.skill-css {
-  background-image: url("img/icon-css.svg");
-}
-
-.level {
-  margin: 4px 0 16px;
-  padding: 0;
-  height: 14px;
-  font-size: 0;
-  background-color: #ffffff;
-  border: 1px solid #86c3fa;
-  border-radius: 8px;
-}
-
-.level div {
-  margin: 1px;
-  height: 12px;
-  background-color: #288be6;
-  border-radius: 6px;
-}
-
-.portfolio {
-  margin: 0 0 120px;
-}
-
-.projects {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.projects li {
-  margin: 0 0 80px;
-}
-
-.project-image {
-  margin: 0 0 24px;
-  text-align: center;
-}
-
-.projects p {
-  margin: 0 0 24px;
-}
-
-.button {
-  padding: 6px 20px;
-  display: inline-block;
-  vertical-align: baseline;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 4px;
-  background-color: #288be6;
-  color: #ffffff;
+.page-main__aboutme::before {
+    content: "";
+    position: absolute;
+    left: 504px;
+    top: 168px;
+    background-image: url("images/Nice_to_see_you.svg");
+    width: 302px;
+    height: 137px; 
 }
 
 .page-footer {
-  padding: 40px 0;
-  background-color: #00417d;
-  color: #ffffff;
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: auto;
 }
 
-.page-footer a {
-  margin-left: 56px;
-  color: inherit;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: left;
+.page-footer__contacts {
+background-image: url("images/Gradient.png");
+background-repeat: no-repeat;
+background-position: 56px -56px;
+padding: 9px 113px 221px 113px;
 }
 
-.footer-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email-footer.svg");
+.page-footer__social {
+    font-family: Cormorant Infant;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.footer-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone-footer.svg");
+.page-footer__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.page-footer__link {
+width: 50px;
+}
+
+.page-footer__item {
+width: 50px;
+}
+
+.page-footer__img {
+    fill: black;
+    width: 50px;
+}
+
+.page-footer__img:focus,
+.page-footer__img:active,
+.page-footer__img:hover {
+    fill: #D62E1D;
 }
