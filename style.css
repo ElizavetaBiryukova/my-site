@@ -4,17 +4,18 @@
 
 .page-main {
     display: flex;
-    width: 1200px;
+    width: 320px;
     margin: auto;
 }
 
 .page-main__titles {
-    width: 1200px;
+    width: 320px;
     margin: auto;
     position: relative;
 }
 
-.page-main__titles::before {
+@media (min-width: 660px) {
+   .page-main__titles::before {
     content: "";
     position: absolute;
     left: 1010px;
@@ -22,26 +23,34 @@
     background-image: url("images/Vector_1.svg");
     width: 80px;
     height: 80px; 
+    }
 }
 
+
+.page-main__title {
+display: none;
+}
+
+@media (min-width: 660px) {
 .page-main__titles::after {
     content: "";
     position: absolute;
-    left: 1098px;
-    top: 614px;
+    left: 10px;
+    top: 24px;
     background-image: url("images/Flower_black.svg");
     width: 45px;
     height: 45px; 
-}
+    }
 
-.page-main__title {
-    font-family: "Petit Formal Script";
-    font-weight: normal;
-    font-size: 160px;
-    line-height: 200px;
-    text-align: center;
-    margin-bottom: 0;
-    position: relative;
+    .page-main__title {
+        font-family: "Petit Formal Script";
+        font-weight: normal;
+        font-size: 45px;
+        line-height: 200px;
+        text-align: center;
+        margin-bottom: 0;
+        position: relative;
+    }
 }
 
 .page-main__title::before {
@@ -55,6 +64,8 @@
     z-index: 10;
 }
 
+
+@media (min-width: 660px) {
 .page-main__title::after {
     content: "";
     position: absolute;
@@ -63,18 +74,19 @@
     background-image: url("images/Flower.svg");
     width: 45px;
     height: 45px; 
+    }
 }
 
 .page-main__aboutme {
     font-family: "Cormorant Infant";
     font-style: normal;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 47px;
     line-height: 73px;
     background-image: url("images/Picture_woods.jpg");
     background-repeat: no-repeat;
-    padding: 72px 339px 333px 37px;
-    margin-left: 80px;
+    padding: 72px 50px 333px 37px;
+    margin-left: 50px;
     position: relative;
 }
 
@@ -101,15 +113,15 @@
 .page-footer {
     display: flex;
     justify-content: center;
-    width: 1200px;
+    width: 320px;
     margin: auto;
 }
 
 .page-footer__contacts {
-background-image: url("images/Gradient.png");
-background-repeat: no-repeat;
-background-position: 56px -56px;
-padding: 9px 113px 221px 113px;
+    background-image: url("images/Gradient.png");
+    background-repeat: no-repeat;
+    background-position: 56px -56px;
+    padding: 9px 113px 221px 113px;
 }
 
 .page-footer__social {
@@ -132,11 +144,11 @@ padding: 9px 113px 221px 113px;
 }
 
 .page-footer__link {
-width: 50px;
+    width: 50px;
 }
 
 .page-footer__item {
-width: 50px;
+    width: 50px;
 }
 
 .page-footer__img {
