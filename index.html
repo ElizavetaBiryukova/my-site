@@ -10,11 +10,14 @@
 
 <body class="page__body">
     <header class="page-header">
-        <a class="page-header__logo">
-            <img src="img/logotype.png" alt="Лиза Бирюкова»">
-        </a>
-        <nav class="main-nav">
-            <button class="main-nav__toggle" type="button"></button>
+        <div class="page-header__wrapper">
+            <a class="page-header__logo">
+                <img src="img/logotype-mob.png" width="100px" alt="Лиза Бирюкова»">
+            </a>
+            <div class="page-header__toggle page-header__toggle--closed"><span></span><span></span></div>
+            <!-- <button class="page-header__toggle page-header__toggle--closed" type="button"></button> -->
+        </div>
+        <nav class="main-nav main-nav--closed">
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item">
@@ -32,8 +35,9 @@
     </header>
     <main class="page-main">
         <h1 class="visually-hidden">Сайт Елизаветы Бирюковой</h1>
-        <section class="hello">
-            <h2 class="visually-hidden">Привет</h2>
+        <section class="greetings">
+            <h2 class="greetings__title">Привет,<br> меня зовут</h2>
+            <span class="greetings__text">Лиза</span>
         </section>
         <section class="gallery">
             <h2 class="visually-hidden">Фотографии</h2>

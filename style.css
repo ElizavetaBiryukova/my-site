@@ -1,18 +1,38 @@
 @font-face {
-    font-family: "PT Sans Narrow";
-    font-weight: normal;
+    font-family: "Open Sans";
     font-style: normal;
-    font-display: swap;
-    src: url("fonts/pt-sans-narrow.woff2") format("woff2"), url("fonts/pt-sans-narrow.woff") format("woff");
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
-    font-family: "PT Sans Narrow";
-    font-weight: bold;
+    font-family: "Open Sans";
     font-style: normal;
-    font-display: swap;
-    src: url("fonts/pt-sans-narrow-bold.woff2") format("woff2"), url("fonts/pt-sans-narrow-bold.woff") format("woff");
+    font-weight: 400;
+    src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "AmaticSC";
+    font-style: normal;
+    font-weight: 400;
+    src: local("AmaticSC-Regular"), url("../my-site/fonts/AmaticSC-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "AmaticSC";
+    font-style: normal;
+    font-weight: 700;
+    src: local("AmaticSC-Bold"), url("../my-site/fonts/AmaticSC-Bold.ttf") format("ttf");
+}
+
 
 img {
     max-width: 100%;
@@ -35,7 +55,7 @@ img {
 .page {
     height: 100%;
     font-size: 18px;
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     line-height: 27px;
 }
 
@@ -49,10 +69,93 @@ img {
 .page-header {
     display: flex;
     flex-direction: column;
-    background-color: #242424;
+    background-color: #000000;
     color: #ffffff;
 }
 
+.page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .page-header__logo {
-    height: 85px;
+    height: 65px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.main-nav__list {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-list__item {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 35px 0 25px 0;
+}
+
+.site-list__item:hover {
+    border-color: #3aafe5;
+}
+
+.page-header__toggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    margin-top: 28px;
+}
+
+.page-header__toggle span {
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 40px;
+    display: block;
+    transition: .6s;
+}
+
+/* .page-header__toggle span {
+    transform: rotate(45deg);
+}
+
+.page-header__toggle span:last-child {
+    transform: rotate(-45deg);
+    margin-top: -7px;
+} */
+
+.main-nav--closed {
+    display: none;
+}
+
+.greetings {
+    padding: 10px;
+    background-image: url(img/eclipse.jpg);
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.greetings__title {
+    color: #e8fdff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.greetings__text {
+    font-family: "AmaticSC", "Arial", sans-serif;
+    color: #e8fdff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
