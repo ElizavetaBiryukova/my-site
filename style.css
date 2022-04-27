@@ -138,10 +138,11 @@ img {
 
 .greetings {
     padding: 10px;
-    background-image: url(img/eclipse.jpg);
+    background-color:#000000;
+    /* background-image: url(img/eclipse.jpg);
     background-position: center;
     background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .greetings__title {
