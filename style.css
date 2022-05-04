@@ -1,36 +1,36 @@
 @font-face {
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('../my-site/fonts/opensanslight.woff2') format('woff2'), url('../my-site/fonts/opensanslight.woff') format('woff');
 }
 
 @font-face {
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../my-site/fonts/opensans.woff2') format('woff2'), url('../my-site/fonts/opensans.woff') format('woff');
 }
 
 @font-face {
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../my-site/fonts/opensansbold.woff2') format('woff2'), url('../my-site/fonts/opensansbold.woff') format('woff');
 }
 
 @font-face {
-    font-family: "AmaticSC";
+    font-family: 'Fantazyor';
     font-style: normal;
     font-weight: 400;
-    src: local("AmaticSC-Regular"), url("../my-site/fonts/AmaticSC-Regular.ttf") format("ttf");
+    src: local('Fantazyor'), url('../my-site/fonts/Fantazyor.woff') format('woff');
 }
 
 @font-face {
-    font-family: "AmaticSC";
+    font-family: 'Shadow';
     font-style: normal;
-    font-weight: 700;
-    src: local("AmaticSC-Bold"), url("../my-site/fonts/AmaticSC-Bold.ttf") format("ttf");
+    font-weight: 400;
+    src: local('Shadow'), url('../my-site/fonts/Shadow-Regular.woff') format('woff');
 }
 
 
@@ -55,7 +55,7 @@ img {
 .page {
     height: 100%;
     font-size: 18px;
-    font-family: "Open Sans", "Arial", sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 27px;
 }
 
@@ -139,24 +139,29 @@ img {
 .greetings {
     padding: 10px;
     background-color:#000000;
-    /* background-image: url(img/eclipse.jpg);
-    background-position: center;
+    background-image: url(img/abstract.jpg);
     background-size: 100% auto;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    padding-bottom: 140px;
+    padding-top: 50px;
 }
 
 .greetings__title {
-    color: #e8fdff;
-    font-size: 30px;
+    font-family: 'Shadow', 'Arial', sans-serif;
+    color: #e452ce;
+    font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
-
+    margin-left: 30px;
+    line-height: 0.8;
 }
 
 .greetings__text {
-    font-family: "AmaticSC", "Arial", sans-serif;
+    font-family: 'Fantazyor', 'Arial', sans-serif;
     color: #e8fdff;
-    font-size: 30px;
+    font-size: 70px;
     text-transform: uppercase;
     font-weight: bold;
+    margin-left: 30px;
+    line-height: 0.5;
 }
