@@ -169,6 +169,7 @@ img {
 .gallery {
     background-color:#000000;
     padding:30px 30px 360px;
+
 }
 
 .gallery__title {
@@ -180,6 +181,11 @@ img {
 
 .contacts {
     background-color:#000000;
+    background-image: url(img/pink-planet.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 320px;
 }
 
 .contacts__title {
