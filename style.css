@@ -2,35 +2,35 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    src: local('Open Sans Light'), local('OpenSans-Light'), url('../my-site/fonts/opensanslight.woff2') format('woff2'), url('../my-site/fonts/opensanslight.woff') format('woff');
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/opensanslight.woff2') format('woff2'), url('fonts/opensanslight.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../my-site/fonts/opensans.woff2') format('woff2'), url('../my-site/fonts/opensans.woff') format('woff');
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('fonts/opensans.woff2') format('woff2'), url('fonts/opensans.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../my-site/fonts/opensansbold.woff2') format('woff2'), url('../my-site/fonts/opensansbold.woff') format('woff');
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('fonts/opensansbold.woff2') format('woff2'), url('fonts/opensansbold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Fantazyor';
     font-style: normal;
     font-weight: 400;
-    src: local('Fantazyor'), url('../my-site/fonts/Fantazyor.woff') format('woff');
+    src: local('Fantazyor'), url('fonts/Fantazyor.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Shadow';
     font-style: normal;
     font-weight: 400;
-    src: local('Shadow'), url('../my-site/fonts/Shadow-Regular.woff') format('woff');
+    src: local('Shadow'), url('fonts/Shadow-Regular.woff') format('woff');
 }
 
 
@@ -164,4 +164,27 @@ img {
     font-weight: bold;
     margin-left: 30px;
     line-height: 0.5;
+}
+
+.gallery {
+    background-color:#000000;
+    padding:30px 30px 360px;
+}
+
+.gallery__title {
+    font-family: 'Shadow', 'Arial', sans-serif;
+    color: #e452ce;
+    margin-left: 30px;
+    margin-top: -40px;
+}
+
+.contacts {
+    background-color:#000000;
+}
+
+.contacts__title {
+    font-family: 'Shadow', 'Arial', sans-serif;
+    color: #e452ce;
+    margin-left: 70px;
+    margin-top: -40px;
 }
