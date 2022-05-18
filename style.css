@@ -20,13 +20,6 @@
 }
 
 @font-face {
-    font-family: 'Fantazyor';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Fantazyor'), url('fonts/Fantazyor.woff') format('woff');
-}
-
-@font-face {
     font-family: 'Shadow';
     font-style: normal;
     font-weight: 400;
