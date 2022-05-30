@@ -186,6 +186,10 @@ img {
     font-family: 'Shadow', 'Arial', sans-serif;
     color: #e452ce;
     margin-left: 30px;
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;
 }
 
 
@@ -194,6 +198,10 @@ img {
     color: #e452ce;
     margin-left: 70px;
     margin-top: -40px;
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;
 }
 
 .contscts__list {
@@ -214,19 +222,18 @@ img {
 }
 
 .contscts__link--github {
-    background: url("img/github100.svg") no-repeat center;
-    width: 100px;
-    height: 100px;
+    background: url("img/github-pink.svg") no-repeat center;
+
 }
 
 .contscts__link--email {
-    background: url("img/email100.svg") no-repeat center;
+    background: url("img/email-pink.svg") no-repeat center;
 }
 
 .contscts__link--telegram {
-    background: url("img/telegram100.svg") no-repeat center;
+    background: url("img/telegram-pink.svg") no-repeat center;
 }
 
 .contscts__link--instagram {
-    background: url("img/instagram100.svg") no-repeat center;
+    background: url("img/instagram-pink.svg") no-repeat center;
 }
