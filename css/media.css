@@ -32,11 +32,11 @@
     }
 
     .nav-link {
-        color: #FF85E4;
+        color: #eab2fe;
     }
 
     .nav-link.active {
-        color: #FF00C7;
+        color: #BD00FF;
     }
 
     .header-row {
