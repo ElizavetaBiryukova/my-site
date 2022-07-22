@@ -149,14 +149,24 @@ body {
     margin-bottom: 40px;
 }
 
+.project-img:hover,
+.project-img:focus{
+    box-shadow: 0px 0px 100px #e9acff;
+}
+
 .project-title {
 
     font-size: 18px;
 }
 
-.project-title a {
+.project-title {
     color: #7904A3;
     text-decoration: underline;
+}
+
+.project-title:hover,
+.project-title:focus {
+    color: #cf4cfe;
 }
 
 .project+.project {
@@ -199,13 +209,13 @@ body {
 
 .btn:hover,
 .btn:focus {
-    background-color: rgb(84, 80, 80);
+    background-color: #ff38d4;
 }
 
 .btn:active {
     position: relative;
     top: 1px;
-    background-color: #000;
+    background-color: #fa29cd;
 }
 
 .contacts-social {
