@@ -33,6 +33,7 @@
 
     .nav-link {
         color: #eab2fe;
+        font-size: 45px;
     }
 
     .nav-link.active {
@@ -102,4 +103,5 @@
         margin-bottom: 20px;
         column-gap: 50px;
     }
+
 }
