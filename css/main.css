@@ -69,10 +69,15 @@ body {
 
 .nav-link {
     color: #cb5cf4;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .nav-link.active {
+    color: #BD00FF;
+}
+
+.nav-link:hover,
+.nav-link:focus {
     color: #BD00FF;
 }
 
