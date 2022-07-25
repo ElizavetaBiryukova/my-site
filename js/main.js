@@ -2,16 +2,11 @@ const nav = document.querySelector('.nav');
 const navBtn = document.querySelector('.nav-button');
 const navBtnImg = document.querySelector('.nav-button-img');
 
-const navLink = document.querySelector('.nav-link');
-const navLink1 = document.querySelector('.nav-link--1');
-const navLink2 = document.querySelector('.nav-link--2');
-const navLink3 = document.querySelector('.nav-link--3');
-// const home = document.querySelector('.header');
-// const portfolio = document.querySelector('.portfolio');
-// const contacts = document.querySelector('.contacts');
-// const SCROLLSECTION = [home]
-
-
+const navLink = document.querySelectorAll('.nav-link');
+const home = document.querySelector('.header');
+const portfolio = document.querySelector('.project');
+const contacts = document.querySelector('.contacts');
+const SCROLLSECTION = [home, portfolio, contacts];
 
 // Открытие меню
 
@@ -23,7 +18,26 @@ navBtn.onclick = () => {
     }
 };
 
-// активное значение в меню
+// Активное значение в меню
+
+const observer = new IntersectionObserver((enteries) => {
+    enteries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            console.log('v', entry.target.id);
+            navLink.forEach((link)=> {
+                link.classList.toggle('active',
+                link.getAttribute('href').replace('#', '') === entry.target.id);
+            });
+        }
+    });
+}, {
+    threshold: 0.7,
+});
+
+SCROLLSECTION.forEach((item) => {
+    observer.observe(item);
+
+});
 
 
 
