@@ -74,6 +74,7 @@ body {
 
 .nav-link.active {
     color: #BD00FF;
+    font-weight: bold;
 }
 
 .nav-link:hover,
