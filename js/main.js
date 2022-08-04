@@ -25,7 +25,6 @@ navList.addEventListener('click', changeIconMenu);
 
 
 // Активное значение в меню
-
 const observer = new IntersectionObserver((enteries) => {
     enteries.forEach((entry) => {
         if (entry.isIntersecting) {

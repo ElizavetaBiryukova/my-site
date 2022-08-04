@@ -11,7 +11,7 @@ body {
 .container {
     max-width: 1230px;
     padding: 0px 30px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .title-1 {
@@ -104,6 +104,10 @@ body {
 .header-content p {
     line-height: 2;
 
+}
+
+.header-img {
+    margin-bottom: -100px;
 }
 
 .services {
