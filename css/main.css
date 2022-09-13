@@ -236,9 +236,14 @@ body {
     margin-bottom: 40px;
 }
 
+.contacts-social svg,
+.contacts-social svg {
+fill: #7904A3;
+}
 
-.contacts-social img:hover,
-.contacts-social img:focus {
-    box-shadow: 0px 0px 50px #e9acff;
+.contacts-social svg:hover,
+.contacts-social svg:focus {
+    /* box-shadow: 0px 0px 50px #e9acff; */
+    fill:#fa29cd;
 
 }

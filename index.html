@@ -5,34 +5,55 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Website of Elizaveta Biryukova" content="Web developer site. HTML, CSS, JavaScript. Portfolio.">
 
     <title>Lisa's website</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons8.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
         integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+
+    <svg style="display: none">
+        <symbol viewBox="0 0 40 40" id="instagram">
+            <path
+                d="M11.3564 0.50961H11.8564V0.5H27.7612C33.7258 0.5 38.6083 5.48469 38.6083 11.612V28.386C38.6083 34.5136 33.7255 39.498 27.7706 39.498H11.3564C5.39053 39.498 0.5 34.5216 0.5 28.4052V11.6216C0.5 5.49485 5.39133 0.50961 11.3564 0.50961ZM2.50833 11.6303V11.6312V28.4149C2.50833 33.401 6.43588 37.4316 11.3564 37.4316H27.7706C32.6738 37.4316 36.5999 33.3995 36.5999 28.3956V11.6216C36.5999 6.6174 32.6735 2.58565 27.7612 2.58565H11.3564C6.44367 2.58565 2.51825 6.61773 2.50833 11.6303ZM30.5927 7.6997C30.5927 7.10977 31.0467 6.66168 31.5968 6.66168C32.147 6.66168 32.601 7.10977 32.601 7.6997C32.601 8.28963 32.147 8.73772 31.5968 8.73772C31.0467 8.73772 30.5927 8.28963 30.5927 7.6997ZM9.53438 20.0038C9.53438 14.3481 14.0591 9.73772 19.5635 9.73772C25.068 9.73772 29.5927 14.3481 29.5927 20.0038C29.5927 25.6596 25.068 30.2699 19.5635 30.2699C14.0591 30.2699 9.53438 25.6596 9.53438 20.0038ZM27.5843 20.0038C27.5843 15.4702 24.0242 11.8137 19.5635 11.8137C15.1029 11.8137 11.5427 15.4702 11.5427 20.0038C11.5427 24.5374 15.1029 28.1939 19.5635 28.1939C24.0242 28.1939 27.5843 24.5374 27.5843 20.0038Z" />
+        </symbol>
+
+        <symbol viewBox="0 0 38 31" id="telegram">
+            <path
+                d="M35.758 0.00228071C35.3371 0.0188454 34.9274 0.123931 34.5579 0.256652C34.1922 0.388486 32.0867 1.19459 28.9775 2.38701C25.8684 3.57943 21.8267 5.13222 17.8202 6.67196C9.80735 9.75143 1.93332 12.7814 1.93332 12.7814L1.99071 12.7617C1.99071 12.7617 1.51547 12.9042 1.03364 13.2054C0.79273 13.3559 0.533546 13.5503 0.32133 13.8337C0.109114 14.1171 -0.0460295 14.5188 0.0124367 14.9436C0.217797 16.4357 1.94176 16.8589 1.94176 16.8589L1.94851 16.862L9.64215 19.224C9.83831 19.811 11.9757 26.2101 12.4458 27.5652C12.7055 28.3145 12.9485 28.7467 13.202 29.0415C13.3289 29.189 13.4618 29.3032 13.6088 29.3867C13.6672 29.4199 13.7286 29.4448 13.7894 29.467C13.7907 29.4675 13.7915 29.4664 13.7928 29.467C13.8003 29.4699 13.8073 29.4702 13.8148 29.473L13.7945 29.4685C13.8086 29.4736 13.8226 29.4822 13.8367 29.4866C13.8641 29.4953 13.8809 29.495 13.916 29.5018C14.7971 29.7777 15.5263 29.2656 15.5263 29.2656L15.5567 29.2444L20.283 25.3122L27.953 30.6767L28.0492 30.7161C29.3917 31.2508 30.6058 30.9525 31.2782 30.4617C31.9506 29.971 32.215 29.3383 32.215 29.3383L32.2437 29.2716L37.8798 2.92149C38.024 2.33198 38.0445 1.82242 37.9085 1.36196C37.7724 0.901496 37.442 0.501223 37.0273 0.279364C36.6127 0.0575046 36.1789 -0.014284 35.758 0.00228071ZM35.8036 1.57847C35.9745 1.57137 36.1012 1.5889 36.1412 1.61027C36.1811 1.63164 36.199 1.62883 36.2374 1.75865C36.2757 1.88848 36.2965 2.16193 36.1918 2.5899L36.1884 2.59899L30.5845 28.7962C30.5712 28.8226 30.4544 29.0649 30.1878 29.2595C29.9158 29.4581 29.6133 29.613 28.8104 29.311L20.423 23.4438L20.1867 23.2773L20.1817 23.2818L17.6734 21.5936L31.7694 6.71738C31.8777 6.60337 31.9469 6.46365 31.9686 6.31513C31.9902 6.1666 31.9635 6.01562 31.8915 5.88044C31.8196 5.74527 31.7055 5.63168 31.5631 5.55343C31.4207 5.47517 31.2561 5.43559 31.0892 5.43947C30.926 5.44327 30.7674 5.48841 30.6317 5.56968L10.2346 17.7674L2.52916 15.4008C2.52916 15.4008 1.76401 15.0189 1.72739 14.7528C1.72536 14.738 1.71632 14.7514 1.75608 14.6983C1.79584 14.6452 1.89579 14.5555 2.02109 14.4772C2.2717 14.3206 2.55786 14.2259 2.55786 14.2259L2.58655 14.2168L2.61525 14.2062C2.61525 14.2062 10.4897 11.1761 18.5022 8.09674C22.5084 6.55708 26.5494 5.00544 29.6578 3.81331C32.7654 2.62149 35.0109 1.76363 35.201 1.69506C35.4175 1.61731 35.6326 1.58558 35.8036 1.57847ZM26.4558 9.93033L15.766 21.212L15.7609 21.2165C15.7443 21.2346 15.7285 21.2533 15.7137 21.2726C15.6967 21.2935 15.681 21.3153 15.6664 21.3377C15.6064 21.4291 15.5679 21.5306 15.5533 21.636C15.5533 21.638 15.5533 21.64 15.5533 21.642L14.1608 27.2594C14.1376 27.1987 14.1214 27.1765 14.0966 27.1049V27.1034C13.6543 25.8286 11.6378 19.7936 11.3588 18.959L26.4558 9.93033ZM16.9729 23.0607L18.8938 24.3538L16.0715 26.7007L16.9729 23.0607Z" />
+        </symbol>
+
+        <symbol viewBox="0 0 38 40" id="vk">
+            <path
+                d="M4.52381 0C2.03615 0 0 2.14332 0 4.7619V35.2381C0 37.8567 2.03615 40 4.52381 40H33.4762C35.9638 40 38 37.8567 38 35.2381V4.7619C38 2.14332 35.9638 0 33.4762 0H4.52381ZM4.52381 1.90476H33.4762C34.9858 1.90476 36.1905 3.17287 36.1905 4.7619V35.2381C36.1905 36.8271 34.9858 38.0952 33.4762 38.0952H4.52381C3.01423 38.0952 1.80952 36.8271 1.80952 35.2381V4.7619C1.80952 3.17287 3.01423 1.90476 4.52381 1.90476ZM17.5492 11.4211C16.5924 11.4188 15.7393 11.4751 14.9763 11.8694C14.9757 11.87 14.9751 11.8707 14.9745 11.8713C14.6025 12.0642 14.3404 12.3092 14.1316 12.6004C14.0272 12.7461 13.9203 12.8768 13.863 13.2087C13.8344 13.3747 13.8183 13.6436 13.9832 13.9342C14.1481 14.2247 14.4796 14.3899 14.6918 14.4196C14.8392 14.4403 15.1718 14.5893 15.2025 14.6336C15.2031 14.6348 15.2036 14.636 15.2042 14.6373C15.2045 14.6376 15.3332 14.9916 15.3703 15.3069C15.4075 15.6223 15.4057 15.878 15.4057 15.878C15.4053 15.9034 15.4059 15.9289 15.4075 15.9542C15.4075 15.9542 15.4599 16.7805 15.4251 17.6339C15.4113 17.9741 15.3695 18.2767 15.3262 18.5472C15.004 18.1728 14.5292 17.4947 13.8436 16.2444C13.0829 14.8566 12.4776 13.6124 12.4776 13.6124C12.4458 13.5039 12.3334 13.1667 11.8944 12.8274C11.4146 12.4551 10.9508 12.3996 10.9508 12.3996C10.8926 12.3873 10.8334 12.381 10.7741 12.381L7.20805 12.3828C7.20805 12.3828 6.99424 12.3698 6.738 12.407C6.48176 12.4442 6.09591 12.4745 5.72368 12.939C5.72309 12.9396 5.7225 12.9402 5.72191 12.9408C5.38924 13.3593 5.40937 13.8217 5.44978 14.083C5.49018 14.3442 5.58054 14.5424 5.58054 14.5424C5.58229 14.5461 5.58405 14.5499 5.58584 14.5536C5.58584 14.5536 8.5027 21.009 11.799 24.8103C14.1927 27.5703 16.6496 27.6172 18.6766 27.6172H20.1893C20.5754 27.6172 20.9248 27.6013 21.3114 27.3642C21.698 27.1271 21.9581 26.5499 21.9581 26.1496C21.9581 25.73 22.0177 25.4002 22.0907 25.2307C22.142 25.1114 22.1827 25.0685 22.2462 25.0335C22.2596 25.0424 22.2509 25.0372 22.2886 25.0651C22.4392 25.1766 22.6879 25.4308 22.9583 25.7478C23.4992 26.3818 24.113 27.2515 24.9375 27.8478C25.5281 28.2755 26.0861 28.4653 26.5102 28.5342C26.776 28.5774 26.9824 28.5691 27.1287 28.5565L30.5074 28.5714C30.5275 28.5715 30.5475 28.5709 30.5675 28.5696C30.5675 28.5696 31.1497 28.5767 31.755 28.1957C32.0577 28.0051 32.4147 27.6439 32.5308 27.1168C32.6469 26.5897 32.501 26.0436 32.2162 25.545C32.2162 25.5444 32.2162 25.5438 32.2162 25.5432C32.2657 25.6294 32.1715 25.4521 32.0749 25.2865C31.9783 25.1208 31.838 24.8975 31.6366 24.6205C31.2339 24.0666 30.5888 23.2913 29.5461 22.2693C29.5455 22.2693 29.545 22.2693 29.5444 22.2693C29.0148 21.7507 28.6572 21.3835 28.5106 21.1793C28.364 20.9752 28.4121 21.0824 28.4222 21.0305C28.4425 20.9267 29.0781 19.9616 30.3714 18.1436C31.1575 17.037 31.7092 16.2063 32.0731 15.5153C32.437 14.8242 32.6994 14.2258 32.5166 13.4933C32.5161 13.4921 32.5155 13.4908 32.5149 13.4896C32.4338 13.168 32.2122 12.8717 31.9847 12.7102C31.7573 12.5487 31.5416 12.4856 31.3486 12.4461C30.9626 12.367 30.6258 12.381 30.3131 12.381C29.6573 12.381 26.7479 12.4051 26.5085 12.4051C26.2255 12.4051 25.7577 12.5406 25.5507 12.6711C25.0304 13.0007 24.881 13.4338 24.881 13.4338C24.8715 13.4521 24.8627 13.4707 24.8544 13.4896C24.8544 13.4896 24.2543 14.8905 23.4814 16.2742C22.6984 17.6777 22.12 18.3472 21.7708 18.657C21.7612 18.6019 21.7629 18.6466 21.7567 18.5696C21.7254 18.1776 21.7602 17.636 21.7602 17.1075C21.7602 15.6842 21.8748 14.688 21.8132 13.8077C21.7824 13.3675 21.705 12.9136 21.4298 12.4963C21.1546 12.079 20.6966 11.8078 20.244 11.6927C19.9725 11.6238 19.6629 11.4444 18.5423 11.4323C18.5417 11.4323 18.5411 11.4323 18.5406 11.4323C18.1979 11.4287 17.8681 11.4219 17.5492 11.4211ZM18.5229 13.3371C19.5145 13.3478 19.2675 13.4052 19.8182 13.5454C19.989 13.5888 19.9476 13.5886 19.9436 13.5826C19.9397 13.5766 19.9898 13.6748 20.009 13.949C20.0474 14.4975 19.9507 15.588 19.9507 17.1075C19.9507 17.5219 19.9032 18.1132 19.9525 18.7295C20.0017 19.3459 20.1469 20.137 20.8466 20.6138C21.1783 20.8401 21.5634 20.8544 21.8928 20.7682C22.2221 20.682 22.5209 20.5025 22.8346 20.2381C23.4621 19.7092 24.162 18.8166 25.0418 17.2396C25.864 15.7675 26.4621 14.3657 26.482 14.3192C26.4858 14.3159 26.4898 14.3137 26.4943 14.3099C26.5056 14.31 26.4939 14.3099 26.5085 14.3099C26.8462 14.3099 29.7021 14.2857 30.3131 14.2857C30.4557 14.2857 30.5076 14.2948 30.6205 14.2987C30.5898 14.4066 30.624 14.3378 30.4898 14.5926C30.2083 15.1271 29.6897 15.9214 28.9223 17.0015C27.6614 18.774 26.8799 19.4685 26.6498 20.6455C26.5348 21.2339 26.7504 21.8862 27.0669 22.327C27.3833 22.7678 27.7828 23.1455 28.3127 23.6644C29.294 24.6262 29.8696 25.325 30.2 25.7794C30.3651 26.0066 30.4692 26.1707 30.5339 26.2816C30.5986 26.3926 30.5827 26.3809 30.6665 26.5272C30.7217 26.6245 30.7013 26.5651 30.7107 26.5941C30.6022 26.6263 30.4707 26.6651 30.4633 26.6667L27.1358 26.6518C27.0759 26.6517 27.0161 26.658 26.9573 26.6704C26.9573 26.6704 26.9656 26.6807 26.7877 26.6518C26.6097 26.6229 26.3266 26.5418 25.9624 26.2779C25.5229 25.96 24.9077 25.1821 24.3049 24.4754C24.0035 24.1221 23.7029 23.7828 23.3294 23.5063C22.956 23.2299 22.3971 22.9699 21.7938 23.1696C21.1675 23.3767 20.68 23.8911 20.442 24.4438C20.2648 24.8552 20.2504 25.2849 20.2228 25.7124C20.1928 25.7148 20.2274 25.7124 20.1893 25.7124H18.6766C16.6213 25.7124 15.1619 25.8621 13.135 23.5249C10.4085 20.3808 7.91044 15.1495 7.50316 14.2876L10.6416 14.2857C10.6967 14.308 10.8148 14.3547 10.8218 14.3601C10.823 14.3614 10.8242 14.3626 10.8253 14.3638C10.7106 14.2756 10.8306 14.3992 10.8306 14.3992C10.8417 14.4277 10.8541 14.4556 10.8677 14.4829C10.8677 14.4829 11.4896 15.7617 12.2761 17.1968C13.0476 18.6036 13.6098 19.4825 14.1528 20.0632C14.4243 20.3536 14.6983 20.5865 15.0646 20.718C15.4309 20.8495 15.9039 20.8013 16.2221 20.6176C16.8721 20.243 16.9594 19.6906 17.065 19.2076C17.1707 18.7239 17.2128 18.2087 17.2329 17.7158C17.2718 16.759 17.2168 15.931 17.2134 15.8798C17.2136 15.8619 17.2178 15.5166 17.1657 15.0744C17.1124 14.6216 17.053 14.068 16.6639 13.51L16.6621 13.5082C16.6594 13.5043 16.656 13.5046 16.6533 13.5007C17.1679 13.4231 17.6082 13.3274 18.5229 13.3371ZM26.5049 14.2708L26.4926 14.3006C26.4906 14.3017 26.4913 14.2992 26.489 14.3006C26.4929 14.2929 26.5049 14.2708 26.5049 14.2708Z" />
+        </symbol>
+    </svg>
+
     <header class="header" id="home">
         <div class="container">
             <div class="header-nav">
-                <a href="#!" class="logo">Elizaveta</a>
+                <a aria-label="logo Elizaveta" href="#!" class="logo">Elizaveta</a>
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">
+                            <a aria-label="home" href="#home" class="nav-link">
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#portfolio" class="nav-link">
+                            <a aria-label="portfolio" href="#portfolio" class="nav-link">
                                 Portfolio
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contacts" class="nav-link">
+                            <a aria-label="contacts" href="#contacts" class="nav-link">
                                 Contacts
                             </a>
                         </li>
@@ -48,12 +69,13 @@
                     <h1 class="header-heading">Elizaveta Biryukova<br> <span>Web developer</span></h1>
                     <p>I’m beginner web developer living In Kaliningrad City. I have a fat cat Urmas.</p>
                 </div>
-                
+
 
 
                 <div class="header-img" data-aos="fade-left">
                     <picture>
-                        <img src="./img/header/cat.png" alt="cat">
+                        <img src="./img/header/cat.png" alt="cat" srcset="./img/header/cat.webp" width="640"
+                            height="640">
                     </picture>
                 </div>
             </div>
@@ -69,24 +91,29 @@
             </div>
 
             <div class="project" id="portfolio" data-aos="flip-up">
-                <a href="https://github.com/ElizavetaBiryukova/pinkapp">
-                    <img src="./img/portfolio/01.jpg" alt="Pink" class="project-img">
+                <a aria-label="Photo editing app - GitHub" href="https://github.com/ElizavetaBiryukova/pinkapp">
+                    <img src="./img/portfolio/01.jpg" alt="Pink" class="project-img" srcset="./img/portfolio/01.webp"
+                        width="900" height="500">
                     <h3 class="project-title">
                         Photo editing app - GitHub
                     </h3>
                 </a>
             </div>
             <div class="project" id="portfolio" data-aos="flip-up">
-                <a href="https://github.com/ElizavetaBiryukova/travello">
-                    <img src="./img/portfolio/07.jpg" alt="Travello" class="project-img">
+                <a aria-label="Landing page: The travel guide app TRAVELLO - GitHub"
+                    href="https://github.com/ElizavetaBiryukova/travello">
+                    <img src="./img/portfolio/07.jpg" alt="Travello" class="project-img"
+                        srcset="./img/portfolio/07.webp" width="900" height="500">
                     <h3 class="project-title">
                         Landing page: The travel guide app "TRAVELLO" - GitHub
                     </h3>
                 </a>
             </div>
             <div class="project" data-aos="flip-up">
-                <a href="https://github.com/ElizavetaBiryukova/keksobooking">
-                    <img src="./img/portfolio/03.jpg" alt="Keksobooking" class="project-img">
+                <a aria-label="Keksobooking: Accommodation search -GitHub"
+                    href="https://github.com/ElizavetaBiryukova/keksobooking">
+                    <img src="./img/portfolio/03.jpg" alt="Keksobooking" class="project-img"
+                        srcset="./img/portfolio/03.webp" width="900" height="500">
                     <h3 class="project-title">
                         Keksobooking: Accommodation search -
                         GitHub
@@ -94,32 +121,36 @@
                 </a>
             </div>
             <div class="project" data-aos="flip-up">
-                <a href="https://github.com/ElizavetaBiryukova/nerds">
-                    <img src="./img/portfolio/02.jpg" alt="Nerds" class="project-img">
+                <a aria-label="Design Studio - GitHub" href="https://github.com/ElizavetaBiryukova/nerds">
+                    <img src="./img/portfolio/02.jpg" alt="Nerds" class="project-img" srcset="./img/portfolio/02.webp"
+                        width="900" height="500">
                     <h3 class="project-title">
                         Design Studio - GitHub
                     </h3>
                 </a>
             </div>
             <div class="project" data-aos="flip-up">
-                <a href="https://github.com/ElizavetaBiryukova/kekstagram">
-                    <img src="./img/portfolio/04.jpg" alt="Kekstagram" class="project-img">
+                <a aria-label="Kekstagram - GitHub" href="https://github.com/ElizavetaBiryukova/kekstagram">
+                    <img src="./img/portfolio/04.jpg" alt="Kekstagram" class="project-img"
+                        srcset="./img/portfolio/04.webp" width="900" height="500">
                     <h3 class="project-title">
                         Kekstagram - GitHub
                     </h3>
                 </a>
             </div>
             <div class="project" data-aos="flip-up">
-                <a href="https://github.com/ElizavetaBiryukova/discover-restaurant">
-                    <img src="./img/portfolio/05.jpg" alt="Delishes" class="project-img">
+                <a aria-label="Discover Restaurant - GitHub" href="https://github.com/ElizavetaBiryukova/discover-restaurant">
+                    <img src="./img/portfolio/05.jpg" alt="Delishes" class="project-img"
+                        srcset="./img/portfolio/05.webp" width="900" height="500">
                     <h3 class="project-title">
                         Discover Restaurant - GitHub
                     </h3>
                 </a>
             </div>
             <div class="project" data-aos="flip-up">
-                <a href="https://github.com/ElizavetaBiryukova/quiz">
-                    <img src="./img/portfolio/06.jpg" alt="Quiz" class="project-img">
+                <a aria-label="Quiz - GitHub" href="https://github.com/ElizavetaBiryukova/quiz">
+                    <img src="./img/portfolio/06.jpg" alt="Quiz" class="project-img" srcset="./img/portfolio/06.webp"
+                        width="900" height="500">
                     <h3 class="project-title">
                         Quiz - GitHub
                     </h3>
@@ -140,12 +171,24 @@
                     You are welcome!</p>
             </div>
             <div class="contacts-button" data-aos="fade-down">
-                <a href="mailto:twerdioreschek@gmail.com" class="btn">Send message</a>
+                <a aria-label="email" href="mailto:twerdioreschek@gmail.com" class="btn">Send message</a>
             </div>
             <div class="contacts-social" data-aos="zoom-in">
-                <a href="https://www.instagram.com/l.biryukova/"><img src="./img/socials/instagram.svg" alt="instagram"></a>
-                <a href="https://t.me/ElizavetaBiryukova"><img src="./img/socials/telegram.svg" alt="telegram"></a>
-                <a href="https://vk.com/mslizaveta"><img src="./img/socials/vk.svg" alt="vkontakte"></a>
+                <a aria-label="instagram" href="https://www.instagram.com/l.biryukova/">
+                    <svg width="40" height="40" alt="instagram">
+                        <use xlink:href="#instagram"></use>
+                    </svg>
+                </a>
+                <a aria-label="telegram" href="https://t.me/ElizavetaBiryukova">
+                    <svg width="38" height="31" alt="telegram">
+                        <use xlink:href="#telegram"></use>
+                    </svg>
+                </a>
+                <a aria-label="vk" href="https://vk.com/mslizaveta">
+                    <svg width="38" height="40" alt="vk">
+                        <use xlink:href="#vk"></use>
+                    </svg>
+                </a>
             </div>
             <div class="contacts-footer" data-aos="fade-up">
                 <p>Like me on<br>

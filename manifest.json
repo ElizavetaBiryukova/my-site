@@ -1,0 +1,17 @@
+{
+    "name": "Liza`s website",
+    "lang": "en-us",
+    "short_name": "LizaWeb",
+    "description": "Website of Elizaveta Biryukova",
+    "start_url": "https://biryukova.org/",
+    "display": "browser",
+    "theme_color": "#FFF9FF",
+    "background_color": "#FFF9FF",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "/icons8.png",
+            "sizes": "96x96"
+        }
+    ]
+}
