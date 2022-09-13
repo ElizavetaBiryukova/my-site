@@ -12,6 +12,11 @@
         {
             "src": "/icons8.png",
             "sizes": "96x96"
+        },
+        {
+            "src": "./img/header/cat.webp",
+            "sizes": "120x120",
+            "type": "image/webp"
         }
     ]
 }
