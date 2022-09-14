@@ -13,9 +13,6 @@
     <link rel="shortcut icon" href="/icons8.png" type="image/png">
     <link rel="manifest" href="/manifest.json">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/header/cat.webp">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -40,7 +37,9 @@
     <header class="header" id="home">
         <div class="container">
             <div class="header-nav">
-                <a aria-label="logo Elizaveta" href="#!" class="logo">Elizaveta</a>
+                <a aria-label="logo Elizaveta" href="#!" class="logo">
+             Elizaveta
+                </a>
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-item">
@@ -60,20 +59,23 @@
                         </li>
 
                     </ul>
-                    <button class="nav-button">
-                        <img class="nav-button-img" src="./img/icons/nav-open.svg" alt="button">
-                    </button>
+                    <div class="nav-button">
+                        <span class="spane-one"></span>
+                        <span class="spane-two"></span>
+                        <span class="spane-three"></span>
+                    </div>
+
                 </nav>
             </div>
             <div class="header-row">
-                <div class="header-content" data-aos="fade-up">
-                    <h1 class="header-heading">Elizaveta Biryukova<br> <span>Web developer</span></h1>
+                <div class="header-content">
+                    <h1 class="header-heading">Elizaveta Biryukova<br> Web developer</h1>
                     <p>I’m beginner web developer living In Kaliningrad City. I have a fat cat Urmas.</p>
                 </div>
 
 
 
-                <div class="header-img" data-aos="fade-left">
+                <div class="header-img">
                     <picture>
                         <img src="./img/header/cat.png" alt="cat" srcset="./img/header/cat.webp" width="640"
                             height="640">
@@ -85,12 +87,12 @@
     <main class="portfolio">
         <div class="container">
             <div class="portfolio-title">
-                <h2 class="title-1">
+                <h2 class="title-1" id="portfolio">
                     Portfolio
                 </h2>
             </div>
 
-            <div class="project" id="portfolio" data-aos="flip-up">
+            <div class="project">
                 <a aria-label="Photo editing app - GitHub" href="https://github.com/ElizavetaBiryukova/pinkapp">
                     <img src="./img/portfolio/01.jpg" alt="Pink" class="project-img" srcset="./img/portfolio/01.webp"
                         width="900" height="500">
@@ -99,7 +101,7 @@
                     </h3>
                 </a>
             </div>
-            <div class="project" id="portfolio" data-aos="flip-up">
+            <div class="project" id="portfolio">
                 <a aria-label="Landing page: The travel guide app TRAVELLO - GitHub"
                     href="https://github.com/ElizavetaBiryukova/travello">
                     <img src="./img/portfolio/07.jpg" alt="Travello" class="project-img"
@@ -109,7 +111,7 @@
                     </h3>
                 </a>
             </div>
-            <div class="project" data-aos="flip-up">
+            <div class="project">
                 <a aria-label="Keksobooking: Accommodation search -GitHub"
                     href="https://github.com/ElizavetaBiryukova/keksobooking">
                     <img src="./img/portfolio/03.jpg" alt="Keksobooking" class="project-img"
@@ -120,7 +122,7 @@
                     </h3>
                 </a>
             </div>
-            <div class="project" data-aos="flip-up">
+            <div class="project">
                 <a aria-label="Design Studio - GitHub" href="https://github.com/ElizavetaBiryukova/nerds">
                     <img src="./img/portfolio/02.jpg" alt="Nerds" class="project-img" srcset="./img/portfolio/02.webp"
                         width="900" height="500">
@@ -129,7 +131,7 @@
                     </h3>
                 </a>
             </div>
-            <div class="project" data-aos="flip-up">
+            <div class="project">
                 <a aria-label="Kekstagram - GitHub" href="https://github.com/ElizavetaBiryukova/kekstagram">
                     <img src="./img/portfolio/04.jpg" alt="Kekstagram" class="project-img"
                         srcset="./img/portfolio/04.webp" width="900" height="500">
@@ -138,7 +140,7 @@
                     </h3>
                 </a>
             </div>
-            <div class="project" data-aos="flip-up">
+            <div class="project">
                 <a aria-label="Discover Restaurant - GitHub"
                     href="https://github.com/ElizavetaBiryukova/discover-restaurant">
                     <img src="./img/portfolio/05.jpg" alt="Delishes" class="project-img"
@@ -148,7 +150,7 @@
                     </h3>
                 </a>
             </div>
-            <div class="project" data-aos="flip-up">
+            <div class="project">
                 <a aria-label="Quiz - GitHub" href="https://github.com/ElizavetaBiryukova/quiz">
                     <img src="./img/portfolio/06.jpg" alt="Quiz" class="project-img" srcset="./img/portfolio/06.webp"
                         width="900" height="500">
@@ -167,14 +169,14 @@
                 </h2>
 
             </div>
-            <div class="contacts-content" data-aos="fade-down">
+            <div class="contacts-content">
                 <p>Want to know more or just chat?<br>
                     You are welcome!</p>
             </div>
-            <div class="contacts-button" data-aos="fade-down">
+            <div class="contacts-button">
                 <a aria-label="email" href="mailto:twerdioreschek@gmail.com" class="btn">Send message</a>
             </div>
-            <div class="contacts-social" data-aos="zoom-in">
+            <div class="contacts-social">
                 <a aria-label="instagram" href="https://www.instagram.com/l.biryukova/">
                     <svg width="40" height="40" alt="instagram">
                         <use xlink:href="#instagram"></use>
@@ -191,7 +193,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="contacts-footer" data-aos="fade-up">
+            <div class="contacts-footer">
                 <p>Like me on<br>
                     Instagram, Telegram, VK</p>
             </div>
@@ -199,9 +201,6 @@
 
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/main.js"></script>
 </body>
 
