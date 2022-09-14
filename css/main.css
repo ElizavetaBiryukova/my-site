@@ -8,10 +8,17 @@ body {
     font-size: 14px;
 }
 
+.portfolio {
+    width: 100%;
+    margin: auto;
+}
+
+
 .container {
     max-width: 1230px;
     padding: 0px 30px;
-    margin: 0px auto;
+    margin:auto;
+
 }
 
 .title-1 {
@@ -23,7 +30,6 @@ body {
 .header {
     padding-top: 46px;
     background-color: #FFEDFF;
-
 }
 
 .header-nav {
@@ -31,6 +37,7 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 76px;
+
 }
 
 .logo {
@@ -157,6 +164,8 @@ body {
 
 .project-img {
     margin-bottom: 40px;
+    /* width: 900px;
+    margin: auto; */
 }
 
 .project-img:hover,
@@ -238,12 +247,11 @@ body {
 
 .contacts-social svg,
 .contacts-social svg {
-fill: #7904A3;
+    fill: #7904A3;
 }
 
 .contacts-social svg:hover,
 .contacts-social svg:focus {
-    /* box-shadow: 0px 0px 50px #e9acff; */
-    fill:#fa29cd;
+    fill: #fa29cd;
 
 }
