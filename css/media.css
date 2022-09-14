@@ -4,7 +4,7 @@
     }
 
     .nav-button {
-        position: absolute;
+        position: fixed;
         z-index: 9;
         top: 46px;
         right: 30px;
