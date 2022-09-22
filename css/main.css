@@ -166,8 +166,6 @@ body {
 
 .project-img {
     margin-bottom: 40px;
-    /* width: 900px;
-    margin: auto; */
 }
 
 .project-img:hover,
@@ -176,13 +174,21 @@ body {
 }
 
 .project-title {
-
     font-size: 18px;
-}
-
-.project-title {
     color: #7904A3;
     text-decoration: underline;
+    padding-bottom: 15px;
+}
+
+.project-public {
+    font-size: 18px;
+    text-decoration: underline;
+    color: #7904A3;
+}
+
+.project-public:hover,
+.project-public:focus {
+    color: #cf4cfe;
 }
 
 .project-title:hover,
@@ -191,7 +197,7 @@ body {
 }
 
 .project+.project {
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 .contacts {
