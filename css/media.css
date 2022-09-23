@@ -165,10 +165,20 @@
     .header-img {
         margin-bottom: -77px;
     }
+
 }
 
 @media(max-width:420px) {
     .header-img {
         margin-bottom: -45px;
+    }
+
+    .project-button {
+        font-size: 14px;
+        min-width: 120px;
+    }
+
+    .project+.project {
+        margin-top: 40px;
     }
 }

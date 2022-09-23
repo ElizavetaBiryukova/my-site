@@ -173,31 +173,38 @@ body {
     box-shadow: 0px 0px 100px #e9acff;
 }
 
-.project-title {
-    font-size: 18px;
-    color: #7904A3;
-    text-decoration: underline;
-    padding-bottom: 15px;
-}
-
-.project-public {
-    font-size: 18px;
-    text-decoration: underline;
-    color: #7904A3;
-}
-
-.project-public:hover,
-.project-public:focus {
-    color: #cf4cfe;
-}
-
-.project-title:hover,
-.project-title:focus {
-    color: #cf4cfe;
-}
-
 .project+.project {
     margin-top: 70px;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.project-title {
+    font-size: 23px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.project-button {
+    background-color: #f95dd7;
+    max-width: 190px;
+    min-width: 150px;
+    border: 1px solid #f8a4e6;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.project-button:focus,
+.project-button:hover {
+    background-color:#fa10c7;
 }
 
 .contacts {
