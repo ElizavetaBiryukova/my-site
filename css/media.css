@@ -89,6 +89,13 @@
         color: #BD00FF;
     }
 
+    .nav-theme {
+        position: fixed;
+        top: 107px;
+        right: 42px;
+        
+    }
+
     .header-row {
         flex-direction: column;
         row-gap: 20px;

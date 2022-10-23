@@ -18,7 +18,6 @@ body {
     max-width: 1230px;
     padding: 0px 30px;
     margin: auto;
-
 }
 
 .title-1 {
@@ -30,6 +29,8 @@ body {
 .header {
     padding-top: 46px;
     background-color: #FFEDFF;
+    position: relative;
+
 }
 
 .header-nav {
@@ -37,7 +38,8 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 76px;
-
+    z-index: 3;
+    position: relative;
 }
 
 .logo {
@@ -91,11 +93,40 @@ body {
     color: #BD00FF;
 }
 
+.nav-theme {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -1px;
+    right: 419px;
+    border: 1px solid #f972dc;
+    border-radius: 50%;
+    background-color: #f972dc;
+    background-image: url(../img/icons/sun.svg); 
+    background-position: center;
+    transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.nav-theme:hover {
+    border: 6px solid #f972dc;
+}
+
+.nav-theme-dark {
+    border:4px solid #000000;
+    background-color: #000000;
+    background-image: url(../img/icons/moon.svg);
+}
+
+.nav-theme-dark:hover {
+    border:8px solid #000000;
+}
+
+
 .header-row {
     display: flex;
     column-gap: 30px;
     justify-content: space-between;
-
+    z-index: 1;
 }
 
 .header-heading {
@@ -180,7 +211,7 @@ body {
 .project-buttons {
     display: flex;
     justify-content: space-evenly;
-    
+
 }
 
 .project-title {
@@ -204,7 +235,7 @@ body {
 
 .project-button:focus,
 .project-button:hover {
-    background-color:#fa10c7;
+    background-color: #fa10c7;
 }
 
 .contacts {
@@ -269,4 +300,28 @@ body {
 .contacts-social svg:focus {
     fill: #fa29cd;
 
+}
+
+.mini-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+}
+
+.square {
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    margin: 2px;
+    /* box-shadow: 0 0 2px #000; */
+    transition: 2s ease;
+    z-index: 2;
+}
+
+.square:hover {
+    transition-duration: 0s;
 }

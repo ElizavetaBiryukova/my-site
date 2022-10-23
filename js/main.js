@@ -36,3 +36,12 @@ SCROLLSECTION.forEach((item) => {
     observer.observe(item);
 
 });
+
+
+//смена темы
+
+const btnTheme = document.querySelector('.nav-theme');
+
+btnTheme.addEventListener('click', ()=> {
+    btnTheme.classList.toggle('nav-theme-dark');
+});
