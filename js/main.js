@@ -44,11 +44,15 @@ const lightStyles = document.querySelectorAll('link[rel=stylesheet][media*=prefe
 const darkStyles = document.querySelectorAll('link[rel=stylesheet][media*=prefers-color-scheme][media*=dark]');
 const darkSchemeMedia = matchMedia('(prefers-color-scheme:dark)');
 const switcherRadios = document.querySelectorAll('.switcher__radio');
+const imgCat = document.querySelector('#img-cat');
+const dark = document.querySelector('switcher__radio--dark');
+
+
 
 function setupSwitcher() {
     const savedScheme = getSavedScheme();
 
-    if(savedScheme != null) {
+    if (savedScheme != null) {
         const currentRadio = document.querySelector(`.switcher__radio[value=${savedScheme}]`);
         currentRadio.checked = true;
     }
@@ -58,6 +62,7 @@ function setupSwitcher() {
             setScheme(event.target.value);
         });
     });
+
 }
 
 function setupScheme() {
@@ -74,31 +79,42 @@ function setupScheme() {
 function setScheme(scheme) {
     switchMedia(scheme);
 
+    
+        
+    // if (scheme == "dark") {
+    //     imgCat.src = './img/header/angry-cat.png';
+    //     imgCat.srcset = './img/header/angry-cat.png';
+    // } else {
+    //     imgCat.src = './img/header/cat.png';
+    //     imgCat.srcset = './img/header/cat.webp';
+    // }
+
     if (scheme === 'auto') {
-        clearScheme();
+        clearScheme(scheme);
     } else {
         saveScheme(scheme);
     }
+
 }
 
 function switchMedia(scheme) {
     let lightMedia;
     let darkMedia;
 
-if (scheme === 'auto') {
-    lightMedia = '(prefers-color-scheme: light)';
-    darkMedia = '(prefers-color-scheme: dark)';
-}else { 
-    lightMedia= (scheme === 'light') ? 'all' : 'not all';
-    darkMedia= (scheme === 'dark') ? 'all' : 'not all';
-}
-[...lightStyles].forEach((link) => {
-    link.media = lightMedia;
-});
+    if (scheme === 'auto') {
+        lightMedia = '(prefers-color-scheme: light)';
+        darkMedia = '(prefers-color-scheme: dark)';
+    } else {
+        lightMedia = (scheme === 'light') ? 'all' : 'not all';
+        darkMedia = (scheme === 'dark') ? 'all' : 'not all';
+    }
+    [...lightStyles].forEach((link) => {
+        link.media = lightMedia;
+    });
 
-[...darkStyles].forEach((link) => {
-    link.media = darkMedia;
-});
+    [...darkStyles].forEach((link) => {
+        link.media = darkMedia;
+    });
 
 }
 
@@ -115,9 +131,10 @@ function saveScheme(scheme) {
     localStorage.getItem('color-scheme', scheme);
 }
 
-function clearScheme() {
+function clearScheme(scheme) {
     localStorage.removeItem('color-scheme', scheme);
 }
 
 setupSwitcher();
 setupScheme();
+

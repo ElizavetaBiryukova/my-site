@@ -10,6 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--basic-purple-color);
     font-size: 14px;
+    cursor: url(../img/icons/cursor.png) 0 0, auto;
 }
 
 .portfolio {
@@ -198,6 +199,7 @@ body {
 .header-img {
     margin-bottom: -107px;
     filter: var(--filter);
+
 }
 
 .services {
