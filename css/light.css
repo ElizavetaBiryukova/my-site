@@ -1,0 +1,12 @@
+:root {
+    --basic-purple-color: #7904A3;
+    --bold-purple-color: #BD00FF;
+    --basic-pink-color: #FF00C7;
+    --background-header-color: #FFEDFF;
+    --background-main-color: #FFF9FF;
+    --link-color: #cb5cf4;
+    --shadow-color: #e9acff;
+    --btn-color: #f95dd7;
+    --basic-white: #ffffff;
+    --filter: brightness(100%);
+}
