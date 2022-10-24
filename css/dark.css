@@ -10,3 +10,16 @@
     --basic-white: #000;
     --filter: brightness(70%);
 }
+
+.switcher__radio {
+    filter: invert(1);
+}
+
+.switcher__radio:checked {
+    filter: invert(0);
+}
+
+.switcher__status {
+    box-shadow: 0 0 0 2px rgba(239, 28, 232, 0.2);
+    background-color: rgba(31, 22, 29, 0.5);
+}

@@ -82,10 +82,13 @@
                     </div>
 
                     <div class="nav-theme">
-                        <!-- <select>
-                            <option value="light"></option>
-                            <option value="dark"></option>
-                        </select> -->
+                        <fieldset class="switcher">
+                            <legend class="switcher__legend">Scheme</legend>
+                            <input type="radio" class="switcher__radio switcher__radio--light" name="color-scheme" value="light" aria-label="light">
+                            <input type="radio" class="switcher__radio switcher__radio--auto" name="color-scheme" value="auto" aria-label="auto" checked>
+                            <input type="radio" class="switcher__radio switcher__radio--dark" name="color-scheme" value="dark" aria-label="dark">
+                            <div class="switcher__status"></div>
+                        </fieldset>
                     </div>
 
                 </nav>
@@ -291,7 +294,7 @@
         </div>
 
     </footer>
-    
+
     <script src="./js/main.js"></script>
 </body>
 
