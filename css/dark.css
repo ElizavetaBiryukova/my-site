@@ -23,3 +23,8 @@
     box-shadow: 0 0 0 2px rgba(239, 28, 232, 0.2);
     background-color: rgba(31, 22, 29, 0.5);
 }
+
+.logo-waves-2 {
+    color: rgb(141, 20, 20);
+    -webkit-text-stroke: 1px rgb(141, 20, 20);
+}

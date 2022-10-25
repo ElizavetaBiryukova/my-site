@@ -48,13 +48,22 @@ const imgCat = document.querySelector('#img-cat');
 const dark = document.querySelector('switcher__radio--dark');
 
 
+// if (savedScheme == "dark") {
+//     imgCat.src = './img/header/angry-cat.png';
+//     imgCat.srcset = './img/header/angry-cat.png';
+// } else {
+//     imgCat.src = './img/header/cat.png';
+//     imgCat.srcset = './img/header/cat.webp';
+// }
 
 function setupSwitcher() {
     const savedScheme = getSavedScheme();
-
+// console.log(savedScheme);
     if (savedScheme != null) {
         const currentRadio = document.querySelector(`.switcher__radio[value=${savedScheme}]`);
         currentRadio.checked = true;
+
+
     }
 
     [...switcherRadios].forEach((radio) => {
@@ -77,14 +86,6 @@ function setupScheme() {
 }
 
 function setScheme(scheme) {
-
-    // if (scheme == "dark") {
-    //     imgCat.src = './img/header/angry-cat.png';
-    //     imgCat.srcset = './img/header/angry-cat.png';
-    // } else {
-    //     imgCat.src = './img/header/cat.png';
-    //     imgCat.srcset = './img/header/cat.webp';
-    // }
     switchMedia(scheme);
 
     if (scheme === 'auto') {
@@ -98,6 +99,7 @@ function setScheme(scheme) {
 function switchMedia(scheme) {
     let lightMedia;
     let darkMedia;
+
 
     if (scheme === 'auto') {
         lightMedia = '(prefers-color-scheme: light)';
