@@ -77,10 +77,7 @@ function setupScheme() {
 }
 
 function setScheme(scheme) {
-    switchMedia(scheme);
 
-    
-        
     // if (scheme == "dark") {
     //     imgCat.src = './img/header/angry-cat.png';
     //     imgCat.srcset = './img/header/angry-cat.png';
@@ -88,6 +85,7 @@ function setScheme(scheme) {
     //     imgCat.src = './img/header/cat.png';
     //     imgCat.srcset = './img/header/cat.webp';
     // }
+    switchMedia(scheme);
 
     if (scheme === 'auto') {
         clearScheme(scheme);
